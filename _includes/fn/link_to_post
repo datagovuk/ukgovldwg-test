@@ -1,1 +1,1 @@
-<a href="{{ BASE_PATH }}{{ post.url }}">{{ post.title | split: "_" | join: " " }}{% if use_date %} ({{ post.date | date: "%B %e, %Y" }}){% endif %}</a>{% assign use_date = false %}
+<a href="{{ site.HOME_PATH }}{{ post.url }}">{{ post.title | split: "_" | join: " " }}{% if use_date %} ({{ post.date | date: "%B %e, %Y" }}){% endif %}</a>{% assign use_date = false %}

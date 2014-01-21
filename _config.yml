@@ -6,7 +6,9 @@ permalink: /browse/by_topic/:categories/:title
 exclude: [".rvmrc", ".rbenv-version", "README.md"]
 
 title: UKGovLDWG
-production_url: http://username.github.io
+
+# HOME_PATH: "" # for local development
+HOME_PATH: "http://swirrl.github.io/ukgovldwg-test" # for deployment
 
 BRAND_COLOUR: coral
 BRAND_COLOUR_LIGHT: "#fff3ef"

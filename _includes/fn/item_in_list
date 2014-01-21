@@ -1,2 +1,2 @@
-<h3><a href="{{item.url}}">{{ item.title }}</a></h3>
+<h3><a href="{{ site.HOME_PATH }}{{item.url}}">{{ item.title }}</a></h3>
 {% include fn/item_preview_or_excerpt %}

@@ -127,7 +127,7 @@ The space of http URIs is huge and a linked data publisher needs to consider to 
 
 Practically speaking the administration of a URI space involves keeping track of which portions of the space have been delegated to what authorities. This may take the form of a list, sometimes called a register, which may carry sufficient information to enable HTTP requests targeted on a particular delegated region of URI space to be routed toward infrastructure supporting the resources assigned within that delegated space. The use of a register to drive request routing in this way enables data to be published at URI that exhibit a degree of persistence even though the publishing authority and supporting infrastructure may both change over time. For example, see “UKGovLD Registry” [\[3\]](#reference-three). Register entries can be updated to reflect infrastructure and organisational change whilst maintaining stable, dereferencable URI for URI Sets, Datasets and vocabularies.
 
-![request routing diagram](/assets/images/uri-routing.png)
+![request routing diagram]({{ site.HOME_PATH }}/assets/images/uri-routing.png)
 
 Authority for any URI space is rooted in the internet Domain Name System (DNS) through the ‘ownership’ of internet domain names. Organisations need to define administrative and operational aspects of URI space management. The parts of a URI that are typically used in delegating authority and routings request tend to occur toward the left-hand end of a URI, while the parts more concerned with distinguishing between individual entities tend to occur toward the right-hand end of a URI.
 

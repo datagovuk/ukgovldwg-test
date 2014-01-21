@@ -1,1 +1,1 @@
-<a href="{{ BASE_PATH }}/browse/by_audience/{{ name }}/">{{ name | split: "_" | join: " " | capitalize}}</a>
+<a href="{{ site.HOME_PATH }}/browse/by_audience/{{ name }}/">{{ name | split: "_" | join: " " | capitalize}}</a>
