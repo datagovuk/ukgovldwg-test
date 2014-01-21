@@ -1,0 +1,14 @@
+{% unless SWIRRL_GLOBALS_AVAILABLE %}
+	{% include fn/initialise_globals%}
+{% endunless %}
+
+<ul>
+{% for name in SWIRRL_SORTED_CATEGORY_NAMES %}
+	<li>
+		<h2>{% include fn/link_to_category_name %}</h2>
+		{% assign category = site.categories[name] %}
+		<p>Includes: {% for post in category %}{% include fn/link_to_post %}{% unless forloop.last %}, {% endunless %}{% endfor %}</p>
+		{% assign category = nil %}
+	</li>
+{% endfor %}
+</ul>

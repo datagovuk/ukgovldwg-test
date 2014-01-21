@@ -1,0 +1,38 @@
+{% include themes/gov.uk/_logo.html %}
+<div id="wrapper" class="answer answer">
+	<main id="content" role="main" class="group">
+		<header class="page-header group">
+			<div>
+				<h1>{{ page.title }}</h1>
+			</div>
+		</header>
+		<div class="article-container group">
+			<article role="article" class="group">
+				<div class="inner">
+					{{ content }}
+				</div>
+				{% if page.date || page.author %}
+				<div class="meta-data group">
+					<div class="inner">
+						<p>
+						{% if page.author %}
+							{{page.author}} <br>
+						{% endif %}
+						{% if page.date %}
+							{{page.date | date: "%B %e, %Y"}}
+						{% endif %}
+						</p>
+					</div>
+				</div>
+				{% endif %}
+			</article>
+		</div>
+	</main>
+	<div class="related-positioning">
+		<div class="related-container">
+			<div class="related" id="related">
+				{{ column_two }}
+			</div>
+		</div>
+	</div>
+</div>

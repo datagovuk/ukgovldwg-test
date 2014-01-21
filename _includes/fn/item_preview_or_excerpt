@@ -1,0 +1,5 @@
+{% if item.preview %}
+	<p>{{ item.preview }}</p>
+{% else  %}
+	{{ item.excerpt }}
+{% endif %}

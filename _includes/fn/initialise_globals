@@ -1,0 +1,21 @@
+{% unless SWIRRL_GLOBALS_AVAILABLE %}
+
+{% assign hash = site.categories %}
+{% capture names %}{% for item in hash %}{%  if item[0] != 0 %}{{ item[0] }}|{% endif %}{% endfor %}{% endcapture %}
+{% assign names_array = names | split: "|"" | sort: %}
+{% assign SWIRRL_SORTED_CATEGORY_NAMES = names_array %}
+{% assign hash = nil %}
+{% assign names = nil %}
+{% assign names_array = nil %}
+
+{% assign hash = site.tags %}
+{% capture names %}{% for item in hash %}{%  if item[0] != 0 %}{{ item[0] }}|{% endif %}{% endfor %}{% endcapture %}
+{% assign names_array = names | split: "|"" | sort: %}
+{% assign SWIRRL_SORTED_TAG_NAMES = names_array %}
+{% assign hash = nil %}
+{% assign names = nil %}
+{% assign names_array = nil %}
+
+{% assign SWIRRL_GLOBALS_AVAILABLE = true %}
+
+{% endunless %}

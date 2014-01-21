@@ -1,0 +1,11 @@
+{% unless SWIRRL_GLOBALS_AVAILABLE %}
+	{% include fn/initialise_globals%}
+{% endunless %}
+
+<ul>
+{% for name in SWIRRL_SORTED_TAG_NAMES %}
+	<li>
+		{% include fn/link_to_tag_name %}
+	</li>
+{% endfor %}
+</ul>

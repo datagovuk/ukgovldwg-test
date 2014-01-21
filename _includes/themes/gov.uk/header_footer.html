@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+
+{% include themes/gov.uk/_head.html %}
+
+<body class="website government html-publication">
+
+	<script type="text/javascript">document.body.className = ((document.body.className) ? document.body.className + ' js-enabled' : 'js-enabled');</script>
+	<div id="skiplink-container">
+		<div>
+			<a href="#content" class="skiplink">Skip to main content</a>
+		</div>
+	</div>
+
+	<header role="banner" id="global-header">
+		<div class="header-wrapper">
+			<div class="header-global">
+				<div class="header-logo">
+					<a href="http://data.gov.uk" title="Go to the DATA.GOV.UK homepage" id="logo" class="content">
+					<img src="http://data.gov.uk/assets/img/dgu-header-white.png" alt="data.gov.uk" style="height:39px; width:213px;">
+					</a>
+				</div>
+			</div>
+		</div>
+	</header>
+
+{{ content }}
+
+	<footer class="group js-footer" id="footer" role="contentinfo">
+		<div class="footer-wrapper">
+			<div class="footer-categories">
+				<div class="footer-explore">
+					<h2>Resources for...</h2>
+					{% include fn/menu_tags %}
+				</div>
+				<div class="footer-inside-government">
+					<h2>Topics</h2>
+					{% include fn/menu_categories %}
+				</div>
+			</div>
+			<div class="footer-meta">
+				<div class="footer-meta-inner">
+					<div class="open-government-licence">
+						<h2><a href="http://www.nationalarchives.gov.uk/doc/open-government-licence/version/2"><img src="https://assets.digital.cabinet-office.gov.uk/static/open-government-licence_2x-d273d7eca3045d3b710a863d9bfc0b33.png" alt="OGL"></a></h2>
+						<p>All content is available under the <a href="http://www.nationalarchives.gov.uk/doc/open-government-licence/version/2">Open Government Licence v2.0</a>, except where otherwise stated</p>
+					</div>
+				</div>
+				<!--<div class="copyright">
+					<a href="http://www.nationalarchives.gov.uk/information-management/our-services/crown-copyright.htm">© Crown Copyright</a>
+				</div>-->
+			</div>
+		</div>
+	</footer>
+
+</body>
+</html>

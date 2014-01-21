@@ -1,0 +1,14 @@
+{% unless SWIRRL_GLOBALS_AVAILABLE %}
+	{% include fn/initialise_globals%}
+{% endunless %}
+
+<ul>
+{% for name in SWIRRL_SORTED_TAG_NAMES %}
+	<li>
+		<h2>{% include fn/link_to_tag_name %}</h2>
+		{% assign tag = site.tags[name] %}
+		<p>Includes: {% for post in tag %}{% include fn/link_to_post %}{% unless forloop.last %}, {% endunless %}{% endfor %}</p>
+		{% assign tag = nil %}
+	</li>
+{% endfor %}
+</ul>

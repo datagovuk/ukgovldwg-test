@@ -1,0 +1,43 @@
+{% capture column_two %}
+	{% for name in page.categories %}
+		{% assign n_posts = site.categories[name] | size %}
+		{% if n_posts >= 2 %}
+			<div class="inner group related-other">
+				<h2 id="parent-other-{{name}}">Also in topic<br>{% include fn/link_to_category_name %}:</h2>
+				<nav role="navigation" aria-labelledby="parent-other-{{name}}">
+					<ul>
+						{% for post in site.categories[name] %}
+							{% if post.title != page.title %}
+								<li>{% include fn/link_to_post %}</li>
+							{% endif %}
+						{% endfor %}
+					</ul>
+				</nav>
+			</div>
+		{% endif %}
+	{% endfor %}
+
+	{% for name in page.tags %}
+		{% assign n_posts = site.tags[name] | size %}
+		{% if n_posts >= 2 %}
+			<div class="inner group related-other">
+				<h2 id="parent-other-{{name}}">Also of interest to<br>{% include fn/link_to_tag_name %}:</h2>
+				<nav role="navigation" aria-labelledby="parent-other-{{name}}">
+					<ul>
+						{% for post in site.tags[name] %}
+							{% if post.title != page.title %}
+								<li>{% include fn/link_to_post %}</li>
+							{% endif %}
+						{% endfor %}
+					</ul>
+				</nav>
+			</div>
+		{% endif %}
+	{% endfor %}
+{% endcapture %}
+
+{% include themes/gov.uk/_layout_twocol.html %}
+
+
+
+

@@ -1,0 +1,12 @@
+#
+#   IMPORTANT: this file is whitespace sensitive. Use two spaces instead of tabs
+#
+
+permalink: /browse/by_topic/:categories/:title 
+exclude: [".rvmrc", ".rbenv-version", "README.md"]
+
+title: UKGovLDWG
+production_url: http://username.github.io
+
+BRAND_COLOUR: coral
+BRAND_COLOUR_LIGHT: "#fff3ef"

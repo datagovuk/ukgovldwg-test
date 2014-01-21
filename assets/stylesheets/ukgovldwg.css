@@ -1,0 +1,29 @@
+/* hack: this might cause problems. adjust for height of logo block on 2col layout */
+
+.related-positioning {top:16em !important}
+
+/* override .gov.uk styles */
+
+#wrapper {padding-bottom: 8px;}
+#whitehall-wrapper .html-publications-show {padding-top:0;}
+#footer a, #footer a:hover, #footer a:visited {color:#171819 !important;} 
+#wrapper {border-bottom:0px;}
+dfn, strong {font-weight:bold !important;}
+
+/* supplement .gov.uk styles */
+
+.inner img {max-width:100%;}
+
+/* additional styles: publication page */
+
+.note{background:lemonchiffon;padding:12px;}
+aside {color:#666; font-size:0.8em;} /* used for footnotes */
+code {white-space: pre-wrap !important; word-wrap: break-word !important;}
+.examples, .examples * {word-wrap: break-word !important;}
+td.constrain {max-width: 250px !important;}
+
+figcaption {margin-top:1em;}
+
+.ldwg-status-notice {background:lemonchiffon;}
+.ldwg-status-notice .html-publications-show {padding-bottom:0 !important;}
+.ldwg-status-notice .inner-block {font-weight:bold; padding:1em 0;}

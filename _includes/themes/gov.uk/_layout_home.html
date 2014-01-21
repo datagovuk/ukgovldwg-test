@@ -1,0 +1,14 @@
+{% capture column_two %}
+	<div class="inner group related-other">
+		<h2 id="parent-other">Latest updates</h2>
+		<nav role="navigation" aria-labelledby="parent-other">
+			<ul>
+				{% for post in site.posts limit: 5 %}
+						<li>{% include fn/link_to_post %}</li>
+				{% endfor %}
+			</ul>
+		</nav>
+	</div>
+{% endcapture %}
+
+{% include themes/gov.uk/_layout_twocol.html %}

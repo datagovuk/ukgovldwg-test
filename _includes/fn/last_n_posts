@@ -1,0 +1,10 @@
+<ul>
+{% for post in site.posts limit: n %}
+<li>
+	{% assign use_date = true %}
+	{% include fn/link_to_post %}
+</li>
+{% endfor %}
+</ul>
+
+{% assign n = nil %}
