@@ -4,4 +4,3 @@ selected: technology
 title: Technology
 ---
 
-[comment]: No editable page content

@@ -4,4 +4,3 @@ menu_audience: developers
 title: Resources for Developers
 ---
 
-[comment]: No editable page content
