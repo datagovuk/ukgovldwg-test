@@ -4,6 +4,7 @@
 
 permalink: /browse/by_topic/:categories/:title 
 exclude: [".rvmrc", ".rbenv-version", "README.md"]
+encoding: utf-8
 
 title: UKGovLDWG
 
