@@ -1,0 +1,8 @@
+# data.gov.uk changes to _config.yml
+#
+# Use both config files:
+#   jekyll --config _config.yml,_config_dgu.yml ...etc...
+#
+
+# Mount the sub-site within data.gov.uk at this path:
+HOME_PATH: "/linked-data"
